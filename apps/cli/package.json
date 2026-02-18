@@ -1,0 +1,22 @@
+{
+  "name": "@builder-pipeline/cli",
+  "version": "0.0.1",
+  "type": "module",
+  "bin": {
+    "bp": "./dist/main.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@builder-pipeline/icon-gen": "workspace:*",
+    "@builder-pipeline/core": "workspace:*",
+    "commander": "^13.0",
+    "dotenv": "^16.5"
+  }
+}
