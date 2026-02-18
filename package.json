@@ -1,0 +1,10 @@
+{
+  "name": "builder-pipeline",
+  "version": "0.0.1",
+  "private": true,
+  "description": "All-in-one toolkit for solo builders — automate everything except the actual building.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  }
+}
