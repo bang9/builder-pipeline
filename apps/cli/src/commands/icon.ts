@@ -10,7 +10,7 @@ import { getImageModel } from '@builder-pipeline/core';
 import { spinner, success, info, error, dim } from '../utils/logger.js';
 
 const ERROR_MESSAGES: Record<string, string> = {
-  MISSING_API_KEY: 'API key not configured. Set GOOGLE_API_KEY or OPENAI_API_KEY in .env',
+  MISSING_API_KEY: 'API key not configured. Set GOOGLE_GENERATIVE_AI_API_KEY or OPENAI_API_KEY in .env',
   UNSUPPORTED_PROVIDER: 'Current provider does not support this feature',
   RATE_LIMITED: 'Rate limited. Please wait and try again',
   CONTENT_POLICY: 'Prompt rejected by content policy. Try a different prompt',

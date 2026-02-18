@@ -40,7 +40,7 @@ describe('formatErrorMessage', () => {
   it('maps known error codes to user-friendly messages', () => {
     const err = new IconGenError('API key not configured', 'MISSING_API_KEY');
     const msg = formatErrorMessage(err);
-    expect(msg).toContain('API key not configured. Set GOOGLE_API_KEY or OPENAI_API_KEY in .env');
+    expect(msg).toContain('API key not configured. Set GOOGLE_GENERATIVE_AI_API_KEY or OPENAI_API_KEY in .env');
   });
 
   it('appends original message when it differs from base', () => {
