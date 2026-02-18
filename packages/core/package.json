@@ -1,0 +1,28 @@
+{
+  "name": "@builder-pipeline/core",
+  "version": "0.0.1",
+  "type": "module",
+  "bp": {
+    "runtime": "nodejs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/google": "^3.0",
+    "@ai-sdk/openai": "^3.0",
+    "@ai-sdk/provider": "^3.0",
+    "ai": "^6.0"
+  }
+}

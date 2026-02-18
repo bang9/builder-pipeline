@@ -1,0 +1,28 @@
+{
+  "name": "@builder-pipeline/icon-gen",
+  "version": "0.0.1",
+  "type": "module",
+  "bp": {
+    "runtime": "nodejs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "node": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-sdk/provider": "^3.0",
+    "@builder-pipeline/core": "workspace:*",
+    "ai": "^6.0",
+    "sharp": "^0.34"
+  }
+}

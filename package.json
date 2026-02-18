@@ -2,9 +2,13 @@
   "name": "builder-pipeline",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "description": "All-in-one toolkit for solo builders — automate everything except the actual building.",
   "license": "MIT",
   "scripts": {
+    "build": "pnpm -r run build",
+    "test": "pnpm -r run test",
+    "typecheck": "pnpm -r run typecheck",
     "format": "prettier --write .",
     "format:check": "prettier --check ."
   },
@@ -12,6 +16,15 @@
     "node": ">=20"
   },
   "devDependencies": {
-    "prettier": "^3.8.1"
+    "@types/node": "^22",
+    "prettier": "^3.8.1",
+    "typescript": "^5.7",
+    "vitest": "^3.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp"
+    ]
   }
 }
