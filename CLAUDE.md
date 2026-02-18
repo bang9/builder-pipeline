@@ -34,6 +34,7 @@ packages/
 - ESM (import/export) only — no CommonJS
 - 함수 단위로 export, barrel export 지양
 - 에러 핸들링은 호출부에서 (throw early, catch late)
+- Prettier 로 포맷팅 (`pnpm format` / `pnpm format:check`)
 
 ### Git
 - Conventional Commits: `feat:`, `fix:`, `chore:`, `refactor:`, `docs:`
