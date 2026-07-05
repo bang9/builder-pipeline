@@ -66,7 +66,8 @@ public DNS:
 ```sh
 dig +short MX <DOMAIN>                          # SUCCESS = route1/2/3.mx.cloudflare.net
 dig +short TXT <DOMAIN>                          # SPF (optional; not needed to receive)
-dig +short TXT cf2024-1._domainkey.<DOMAIN>      # DKIM
+dig +short TXT cf2024-1._domainkey.<DOMAIN>      # DKIM — selector may rotate over time; if empty,
+                                                 #   read the current selector from the dashboard DNS records
 # sanity-check dig itself if MX is empty:
 dig +short MX google.com
 ```
