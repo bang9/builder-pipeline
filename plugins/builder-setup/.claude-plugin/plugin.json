@@ -1,0 +1,21 @@
+{
+  "name": "builder-setup",
+  "description": "Setup automation skills for solo builders — end-to-end provisioning of the external services an app needs before it can ship (EAS, Firebase, Google Cloud OAuth, Play Console).",
+  "version": "0.1.0",
+  "author": {
+    "name": "bang9"
+  },
+  "homepage": "https://github.com/bang9/builder-pipeline",
+  "repository": "https://github.com/bang9/builder-pipeline",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "expo",
+    "eas",
+    "firebase",
+    "google-sign-in",
+    "play-console",
+    "setup",
+    "solo-builder"
+  ]
+}

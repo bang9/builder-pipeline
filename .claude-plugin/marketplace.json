@@ -1,0 +1,13 @@
+{
+  "name": "builder-pipeline",
+  "owner": {
+    "name": "bang9"
+  },
+  "plugins": [
+    {
+      "name": "builder-setup",
+      "source": "./plugins/builder-setup",
+      "description": "Setup automation skills for solo builders — provision the external services an app needs before shipping (EAS, Firebase/GCP, Google Sign-In OAuth, Play Console)."
+    }
+  ]
+}
