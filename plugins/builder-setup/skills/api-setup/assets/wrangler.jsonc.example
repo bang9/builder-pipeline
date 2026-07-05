@@ -1,0 +1,23 @@
+{
+  // COMMITTED TEMPLATE. Copy to wrangler.jsonc (gitignored) and fill instance values.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "__WORKER_NAME__",
+  "main": "src/index.ts",
+  "compatibility_date": "__TODAY_YYYY_MM_DD__",
+  // "compatibility_flags": ["nodejs_compat"], // enable only if a dep needs Node built-ins
+
+  "d1_databases": [
+    {
+      "binding": "DB", // available as c.env.DB in Hono
+      "database_name": "__DB_NAME__",
+      "database_id": "__PASTE_AFTER_wrangler_d1_create__",
+      "migrations_dir": "drizzle/migrations"
+    }
+  ]
+
+  // Add as the app grows (all optional):
+  // "queues": { "producers": [], "consumers": [] },
+  // "durable_objects": { "bindings": [] },
+  // "triggers": { "crons": [] },
+  // "routes": [{ "pattern": "api.example.com", "custom_domain": true }]
+}
